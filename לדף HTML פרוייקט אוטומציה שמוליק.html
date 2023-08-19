@@ -5,6 +5,7 @@
     <title>התקדמות טכנולוגית </title>  <!-- כותרת הטאב של הדפדפן -->
     <style>
     </style>
+
 </head>
 
 
@@ -125,69 +126,90 @@ As we move forward, we can expect ChatGPT and similar AI-powered chatbots to con
 To stay on top of the latest on new and emerging business and tech trends.<br />
 
  <article> 
- <br />
- <br />
- <br />
+ <br>
+ <br>
+ <br>
 
-    <form>
-        <label for="fname">שם פרטי</label><br>
+ <h4 style="color:black;text-align:left;font-size: 15px">Please Fill In Your Personal Details</h4>
+ <br>
+     <form>
+        <label for="fname">First Name</label><br>
         <input type="text" id="fname" name="fname">
 
         <br>
         <br>
-        <label for="lname">שם משפחה</label><br>
+        <label for="lname">Last Name</label><br>
         <input type="text" id="lname" name="lname">
 
         <br>
         <br>
-        <label for="lname">טלפון</label><br>
+        <label for="lname">Phone Number</label><br>
         <input type="text" id="lname" name="lname">
 
 
         <br>
         <br>
-
+		 <h4 style="color:black;text-align:left;font-size: 15px">Gender</h4>
         <div>
+		  <input type="radio" name="gender" value="M" />Male
+    <br>
+    <input type="radio" name="gender" value="F" />Female
+	<br>
+	<br>
+	<h4 style="color:black;text-align:left;font-size: 15px">Did You Like The Article?</h4>
+	<br>
             <input type="radio" id="huey" name="drone" value="huey"
                    checked>
-            <label for="huey">אני לא מרוצה מהשירות</label>
+            <label for="huey">Yes</label>
         </div>
 
         <br>
         <div>
             <input type="radio" id="dewey" name="drone" value="dewey">
-            <label for="dewey">אני מרוצה מהשירות</label>
+            <label for="dewey">No</label>
         </div>
 
         <br>
-        <div>
-            <input type="radio" id="louie" name="drone" value="louie">
-            <label for="louie">אני מאוד מרוצה מהשירות</label>
-        </div>
         <br>
-        <div>
+		<h4 style="color:black;text-align:left;font-size: 15px"> What Topics Did You Like To Read?</h4> 
+	<br>
+         <div>
             <input type="checkbox" id="scales" name="scales">
 
-            <label for="scales">אני כבר לא אחזור</label>
+            <label for="scales">לרשום נושא</label>  <!-- אורלי  -->
         </div>
         <br>
         <div>
             <input type="checkbox" id="horns" name="horns">
 
-            <label for="horns">יכול להיות שאחזור</label>
+            <label for="horns">לרשום נושא</label>   <!-- אורלי  -->
         </div>
         <br>
 
         <div>
             <input type="checkbox" id="horns" name="horns" checked>
 
-            <label for="horns">אני בטוח אחזור</label>
+            <label for="horns">How Many Jobs Do Robots Really Replac?</label>
         </div>
+		        <br>
 
+		<div>
+            <input type="checkbox" id="scales" name="scales">
+
+            <label for="scales">A Short History Of ChatGPT: How We Got To Where We Are Today</label>
+        </div>
         <br>
+			<div>
+            <input type="checkbox" id="scales" name="scales">
+
+            <label for="scales">Nothing</label>
+        </div>
         <br>
-        <label for="ציון">בחר ציון 1-5:</label>
+		<br>
+		<h4 style="color:black;text-align:left;font-size: 15px">How Much The Article Enriched Your Knowledge From 1 to 5?</h4>
+        <label for="ציון"> 1-5:</label>
         <select name="ציון" id="ציון">
+		<option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -197,7 +219,7 @@ To stay on top of the latest on new and emerging business and tech trends.<br />
         <br>
         <br>
 
-        <button type="button" onclick="myFunction()">שגר טופס</button>
+        <button type="button" onclick="myFunction()">Submit</button>
         <br>
         <br>
 
@@ -207,9 +229,9 @@ To stay on top of the latest on new and emerging business and tech trends.<br />
 
     <script>
         function myFunction() {
-            alert("תודה רבה, שמוליק הטכנאי המהיר במחשוב מעריך את בחירתך");
+            alert("Thank you very much, Shmulik and Orly thank you for your response");
         }
     </script>
 </body>
-<img src="https://computer-repair.co.il/wp-content/uploads/2022/01/Logo-transperent-2.png" />
+<img src="" />
 </html>
