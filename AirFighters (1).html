@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to my F16 web page</title>
+  
+  <!-- Write your Java script here -->
+  
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Thank you for your request";
+
+		alert("Your request was sent to the store");
+}
+</script>
+
+<style>
+/* Base for label styling */
+	[type="checkbox"]:not(:checked),
+	[type="checkbox"]:checked {
+		position: absolute;
+		left: 0;
+		opacity: 0.01;
+	}
+	[type="checkbox"]:not(:checked) + label,
+	[type="checkbox"]:checked + label {
+		position: relative;
+		padding-left: 2.3em;
+		font-size: 1.05em;
+		line-height: 1.7;
+		cursor: pointer;
+	}
+
+	/* checkbox aspect */
+	[type="checkbox"]:not(:checked) + label:before,
+	[type="checkbox"]:checked + label:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 1.4em;
+		height: 1.4em;
+		border: 1px solid #aaa;
+		background: #FFF;
+		border-radius: .2em;
+		box-shadow: inset 0 1px 3px rgba(0,0,0, .1), 0 0 0 rgba(203, 34, 237, .2);
+		-webkit-transition: all .275s;
+				transition: all .275s;
+	}
+
+	/* checked mark aspect */
+	[type="checkbox"]:not(:checked) + label:after,
+	[type="checkbox"]:checked + label:after {
+		content: '✕';
+		position: absolute;
+		top: .525em;
+		left: .18em;
+		font-size: 1.375em;
+		color: #2292ed;
+		line-height: 0;
+		-webkit-transition: all .2s;
+				transition: all .2s;
+	}
+
+	/* checked mark aspect changes */
+	[type="checkbox"]:not(:checked) + label:after {
+		opacity: 0;
+		-webkit-transform: scale(0) rotate(45deg);
+				transform: scale(0) rotate(45deg);
+	}
+
+	[type="checkbox"]:checked + label:after {
+		opacity: 1;
+		-webkit-transform: scale(1) rotate(0);
+				transform: scale(1) rotate(0);
+	}
+
+	/* Disabled checkbox */
+	[type="checkbox"]:disabled:not(:checked) + label:before,
+	[type="checkbox"]:disabled:checked + label:before {
+		box-shadow: none;
+		border-color: #bbb;
+		background-color: #e9e9e9;
+	}
+
+	[type="checkbox"]:disabled:checked + label:after {
+		color: #777;
+	}
+
+	[type="checkbox"]:disabled + label {
+		color: #aaa;
+	}
+
+	/* Accessibility */
+	[type="checkbox"]:checked:focus + label:before,
+	[type="checkbox"]:not(:checked):focus + label:before {
+		box-shadow: inset 0 1px 3px rgba(0,0,0, .1), 0 0 0 6px rgba(203, 34, 237, .2);
+	}
+
+
+
+
+/*
+ * Useless styles, just for demo design
+ */
+body {
+  font-family: "Open Sans", "Segoe WP", "Segoe UI", Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: #34495E;
+    background: #FCFDFD;
+}
+
+a[href^="https://www.creativejuiz"] {
+  color: #34495E;
+  text-decoration: underline;
+}
+
+h1 {
+  margin-top: 1em;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 2em;
+  color: #CB22ED;
+  font-weight: normal;
+}
+
+form {
+  width: 120px;
+  margin: 0 auto 55px;
+  text-align: left;
+}
+
+div p:first-child {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+p { 
+  color: #aaa;
+}
+
+p a {
+  color: inherit;
+}
+
+p + p {
+  margin-top: 3em;
+}
+
+form p {
+  margin: 15px 0;
+  color: #34495E;
+}
+
+a[href^="https://twitter.com"] {
+  color: #1da1f2;
+}
+
+.btn.btn {
+  display: inline-block;
+  padding: 8px 24px;
+  text-decoration: none;
+  border-radius: 40px;
+  background: #34495E;
+  color: #F2F2F2;
+  transition: all .4s;
+}
+
+.btn.btn:hover,
+.btn.btn:focus {
+  background: #000;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>I love Battle Airplanes</h1>
+
+<h3>F16</h3>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/F-16_June_2008.jpg/300px-F-16_June_2008.jpg" alt="F16" width="400" height="300">
+<p>The General Dynamics F-16 Fighting Falcon is an American single-engine supersonic multirole fighter aircraft originally developed by General Dynamics for the United States Air Force (USAF). Designed as an air superiority day fighter, it evolved into a successful all-weather multirole aircraft. Over 4,600 aircraft have been built since production was approved in 1976.[4] Although no longer being purchased by the U.S. Air Force, improved versions are being built for export customers. In 1993, General Dynamics sold its aircraft manufacturing business to the Lockheed Corporation,[5] which in turn became part of Lockheed Martin after a 1995 merger with Martin Marietta.[6]
+
+The Fighting Falcon's key features include a frameless bubble canopy for good visibility, side-mounted control stick to ease control while maneuvering, an ejection seat reclined 30 degrees from vertical to reduce the effect of g-forces on the pilot, and the first use of a relaxed static stability/fly-by-wire flight control system that helps to make it an agile aircraft. The F-16 has an internal M61 Vulcan cannon and 11 hardpoints.</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Northrop_YF-17_Cobra_060810-F-1234S-033.jpg/220px-Northrop_YF-17_Cobra_060810-F-1234S-033.jpg" alt="F16" width="400" height="300">
+
+<p>Please select your favorite Air Fighter:</p>
+  <input type="radio" id="f15" name="fav_language" value="F15">
+  <label for="f15">F15</label><br>
+  <input type="radio" id="f16" name="fav_language" value="F16">
+  <label for="f16">F16</label><br>
+  <input type="radio" id="javascript" name="fav_language"
+  <input type="radio" id="f35" name="fav_language" value="F35">
+  <label for="f35">F35</label><br>
+
+<br>
+<br>
+
+<p>Please select your favorite Air Fighter:</p>
+<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="vehicle1"> I have a bike</label><br>
+<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+<label for="vehicle2"> I have a car</label><br>
+<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+<label for="vehicle3"> I have a boat</label><br>
+
+<br>
+<br>
+
+<label for="cars">Choose a car:</label>
+<select  name="cars" id="cars">
+  <optgroup label="Swedish Cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+  </optgroup>
+  <optgroup label="German Cars">
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </optgroup>
+</select>
+<br>
+<br>
+
+<button onclick="myFunction()">Submit your request</button>
+<p id="demo"></p>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NpjSPuGOpe4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+<h2>Absolute URLs</h2>
+<p><a href="https://www.w3.org/">W3C</a></p>
+<p><a href="https://www.google.com/">Google</a></p>
+
+<h2>Relative URLs</h2>
+<p><a href="html_images.asp">HTML Images</a></p>
+<p><a href="/css/default.asp">CSS Tutorial</a></p>
+
+
+
+<h3>F15</h3>
+
+<h3>SA-300</h3>
+
+</body>
+</html>
